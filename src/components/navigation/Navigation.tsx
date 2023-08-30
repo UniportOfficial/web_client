@@ -9,7 +9,7 @@ import {
 
 export default function Navigation(){
     return(
-        <nav className="fixed bottom-0 py-4 nav-wrapper w-full flex justify-evenly items-center ">
+        <nav className="fixed bottom-0 py-4 nav-wrapper w-full flex justify-evenly items-center bg-white">
             <div className="text-center text-2xl">
                 <button><FontAwesomeIcon icon={faHome}/></button>
             </div>
