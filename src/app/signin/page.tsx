@@ -1,3 +1,5 @@
+import LoginGroup from "@/components/signin/LoginGroup"
+
 export default function Signin(){
     return(
         <section className="px-8">
@@ -26,7 +28,7 @@ export default function Signin(){
                 </div>
             </div>
             <div className="py-4">
-
+                <LoginGroup></LoginGroup>
             </div>
         </section>
     )
