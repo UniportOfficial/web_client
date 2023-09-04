@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-export default function IntroCarousel (){
+export default function IntroCarousel ({className}: {className?:string}){
     return (
         <Swiper 
-            className="my-4 w-full"
+            className={`w-full ${className}`}
             spaceBetween={10}
             loop={true}
             autoplay={{
