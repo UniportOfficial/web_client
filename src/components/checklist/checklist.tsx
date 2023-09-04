@@ -8,10 +8,10 @@ export default function Checklist({data}: {data:Array<any>}){
                     return (
                         <div 
                             className="flex items-center mb-2"
-                            key={index} 
+                            key={index}
                         >
-                            <input className="mr-2" type="checkbox"/>
-                            <label>{check.content}</label>
+                            <input id={String(index)} className="mr-2" type="checkbox"/>
+                            <label htmlFor={String(index)}>{check.content}</label>
                         </div>
                     )
                 })

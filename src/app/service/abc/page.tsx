@@ -1,12 +1,14 @@
 import Navigation from "@/components/navigation/Navigation";
-import IntroCarousel from '@/components/main/IntroCarousel';
-import ChecklistCarousel from "@/components/main/ChecklistCarousel";
+import IntroCarousel from '@/components/service/IntroCarousel';
+import ChecklistCarousel from "@/components/service/ChecklistCarousel";
 
-export default function Main(){
+import BrandLogo from "@/components/service/BrandLogo";
+
+export default function ABC(){
     return(
         <main>
             <section className="px-8 py-4">
-                <BrandLogo></BrandLogo>
+                <BrandLogo/>
                 <div className="content-container py-2">
                     <h1 className="text-2xl">What is A.B.C</h1>
                     <IntroCarousel></IntroCarousel>
@@ -24,14 +26,5 @@ export default function Main(){
             <div className="navgiation-wrapper mb-20"></div>
             <Navigation/>
         </main>
-    )
-}
-
-function BrandLogo(){
-    return(
-        <div className="brand-wrapper">
-            <h1 className="text-2xl">Uni-Port</h1>
-            <p className="text-sm text-slate-400">Uniting the World</p>
-        </div>
     )
 }
