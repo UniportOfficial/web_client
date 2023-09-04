@@ -4,7 +4,10 @@ import ChecklistCarousel from "@/components/service/ChecklistCarousel";
 
 import BrandLogo from "@/components/service/BrandLogo";
 
+const checklistBankAccount = require('/public/checklist/bankaccount.json');
+
 export default function ABC(){
+    const checklists = [checklistBankAccount, checklistBankAccount];
     return(
         <main>
             <section className="px-8 py-4">
@@ -17,7 +20,7 @@ export default function ABC(){
                         <p>complex paperwork and reservations</p>
                     </div>
                 </div>
-                <ChecklistCarousel/>
+                <ChecklistCarousel datas={checklists}/>
                 <div className="catchphrase py-4 text-center text-xs text-slate-400">
                     <p>Eliminate repetitive outlining tasks once and for all</p>
                 </div>

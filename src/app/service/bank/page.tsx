@@ -6,7 +6,7 @@ import BrandLogo from "@/components/service/BrandLogo";
 
 const checklistBankAccount = require("/public/checklist/bankaccount.json");
 
-export default function Cellphone(){
+export default function Bank(){
     const checklists = [checklistBankAccount, checklistBankAccount];
 
     return(
@@ -14,7 +14,7 @@ export default function Cellphone(){
             <section className="px-8 py-4">
                 <BrandLogo/>
                 <div className="content-container py-2">
-                    <h1 className="text-2xl">Cellphone</h1>
+                    <h1 className="text-2xl">Bank Account</h1>
                     <IntroCarousel className="mb-6"></IntroCarousel>
                     <div className="catchphrase text-center text-xs text-slate-400 mb-4">
                         <p>We can prepare the necessary documents</p>

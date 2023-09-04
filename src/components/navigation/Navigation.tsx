@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHome, faComment, faPlusSquare, faUser, faBars } from "@fortawesome/free-solid-svg-icons"
 import { 
     faUser as faUserReuglar,
-    faComment as faCommentRegular
+    faComment as faCommentRegular,
 } from "@fortawesome/free-regular-svg-icons"
 
 export default function Navigation(){

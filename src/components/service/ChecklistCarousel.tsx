@@ -3,19 +3,20 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import Checklist from '../checklist/checklist';
 
-const checklistBankAccount = require('/public/checklist/bankaccount.json');
-
-export default function ChecklistCarousel(){
+export default function ChecklistCarousel({datas}: {datas: Array<any>}){
     return (
         <Swiper
             spaceBetween={10}
         >
-            <SwiperSlide>
-                <Checklist data={checklistBankAccount}/>
-            </SwiperSlide>
-            <SwiperSlide>
-                <Checklist data={checklistBankAccount}/>
-            </SwiperSlide>
+            {
+                datas.map((data,idx)=>{
+                    return(
+                        <SwiperSlide key={`checklist-${idx}`}>
+                            <Checklist data={data}/>
+                        </SwiperSlide>
+                    )
+                })
+            }
         </Swiper>
     )
 }
